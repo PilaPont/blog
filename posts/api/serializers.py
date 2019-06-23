@@ -1,8 +1,6 @@
 from rest_framework import serializers
 
 from posts.models import BlogPost
-from comments.api.serializers import CommentSerializer
-from comments.models import Comment
 
 
 class BlogPostSerializer(serializers.ModelSerializer):  # forms.ModelForm

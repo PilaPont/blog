@@ -1,6 +1,5 @@
 from django.conf import settings
 from django.db import models
-# import computed_property
 
 
 class BlogPost(models.Model):

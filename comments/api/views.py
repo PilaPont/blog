@@ -16,7 +16,7 @@ class CommentViewSet(viewsets.ModelViewSet):
         print('self.acton=', self.action)
         if self.action == 'list':
             queryset_list = Comment.objects.filter(approved=True, live=True,
-                                                   post__id=self.kwargs['post'])
+                                                   post_id=self.kwargs['post'])
         else:
             queryset_list = Comment.objects.filter(approved=True, live=True)
         query = self.request.GET.get("q")
