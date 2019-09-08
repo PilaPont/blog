@@ -1,5 +1,6 @@
 from django.conf import settings
 from django.db import models
+from django.urls import reverse
 
 
 class BlogPost(models.Model):
@@ -21,3 +22,6 @@ class BlogPost(models.Model):
     @property
     def get_comments_count(self):
         return self.comments.count()
+
+    def get_absolute_url(self):
+        return reverse('posts:detail', kwargs={'post_id': self.id})
