@@ -19,7 +19,7 @@ cupshelpers==1.0
 defer==1.0.6
 defusedxml==0.6.0
 distro-info==0.18
-Django==2.2.2
+Django==2.2.8
 django-computed-property==0.2.4
 djangorestframework==3.9.4
 djangorestframework-jwt==1.11.0
